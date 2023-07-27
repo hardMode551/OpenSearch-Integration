@@ -1,0 +1,62 @@
+.root {
+  input {
+    font-size: 18px;
+    padding: 10px;
+
+    margin-bottom: 10px;
+  }
+
+  .backBtn {
+    margin-right: 10px;
+  }
+
+  .booking_information_table {
+    margin-top: 30px;
+
+    :global {
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td {
+        background-color: #444444;
+        color: rgba(255, 255, 255, 0.87);
+      }
+
+      .ant-pagination {
+        .ant-pagination-item-active {
+          a {
+            color: #1677ff;
+          }
+        }
+
+        a,
+        button {
+          color: rgba(255, 255, 255, 0.87);
+        }
+
+        .ant-pagination-item-ellipsis {
+          color: rgba(255, 255, 255, 0.87);
+        }
+      }
+
+      .ant-table-column-has-sorters:hover {
+        color: #444444;
+        svg {
+          fill: #444444;
+        }
+      }
+
+      .ant-table-row {
+        cursor: pointer;
+
+        &:hover {
+          td {
+            color: #444444;
+          }
+        }
+      }
+
+      .ant-table-thead > tr > th {
+        background-color: #3a3a3a;
+      }
+    }
+  }
+}
